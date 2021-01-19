@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RPG</title>
+    <link rel="stylesheet" type="text/css" href="style_preload.css">
+</head>
+
+<body>
+    <center>
+        <div class="carga">
+            <h1 id="frases">Entrando a la grieta</h1>
+        </div>
+        <div class="preloader"></div>
+    </center>
+
+    <script>
+        let letreros = ['Limpiando Dust 2', 'Recolectando materiales', 'Preparando los subditos', 'Enfriando habilidades']
+        let exit = 0;
+        let letrero = document.getElementById('frases');
+        function run() {
+            // run this code
+
+            setInterval(afterTwoSeconds, 2000);
+        }
+
+        function afterTwoSeconds() {
+            letrero.innerText = letreros[exit];
+            if (letrero.innerText == letreros[exit]) {
+                exit = exit++;
+            }
+        }
+        // call run
+        
+        /*sleep(1000);
+        letrero.innerText = 'Recolectando materiales';
+            sleep(1000);
+            letrero.innerText = 'Preparando los subditos';
+            sleep(1000);
+            letrero.innerText = 'Enfriando habilidades';
+            sleep(1000);*/
+        function sleep(ms) {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    console.log('resolve');
+                    resolve('resolve');
+                }, ms);
+            });
+        }
+
+
+    </script>
+</body>
+
+</html>

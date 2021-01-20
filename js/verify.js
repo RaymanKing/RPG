@@ -12,7 +12,6 @@ async function postRequest(name, pass){
         }),
     };
     return fetch(URL, options)
-        .then(response => {
-            console.log('Well done!');
-        });
+        .then(response => response.json())
+        .then(data => data);
 }

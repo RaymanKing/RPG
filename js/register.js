@@ -1,6 +1,6 @@
 const URL = 'http://localhost:1337/auth/local/register';
 
-async function postRequest(name, mail, pass, avat){
+function postRequest(name, mail, pass, avat){
     const options = {
         method: 'POST',
         headers: { 

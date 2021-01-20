@@ -13,10 +13,10 @@ async function getRequest(url){
 }
 
 async function getPlayers(name , pass){
-    const result =  await getRequest('http://localhost:1337/Users');
+    const result =  await getRequest(URL);
     console.log('result',result);
     for(let i = 0; i < result.length; i++){
-        console.log(result[i].username+' '+result[i].password)
+        console.log(result[i].username+' '+result[i].jwt)
         if(result[i].username == name && result[i].password == pass){
             alert('Has iniciado sesión en RPG!');
         }else{

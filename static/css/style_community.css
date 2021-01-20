@@ -1,0 +1,31 @@
+body{
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+.container-fluid {
+    background-color: rgba(223, 0, 0, 0);
+}
+
+.card{
+    margin: 30px;
+    text-align: center;
+    background-color: rgba(14, 14, 14, 0.377);
+    color: white;
+    border: 2px rgb(179, 80, 0) solid;
+}
+
+.card .card-img{
+    border-radius: 100%;
+    border: 2px white solid;
+}
+
+.card .card-body .btn{
+    background-color: rgb(179, 80, 0);
+    transition: all 0.35s;
+    border: 0px;
+}
+
+.card .card-body .btn:hover{
+    background-color: red;
+    transform: scale(1.1, 1.1);
+}

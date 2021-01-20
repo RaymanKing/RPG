@@ -83,6 +83,7 @@ body{
 
 .form-group#email::before{
     content: "\f0e0";
+
 }
 
 .form-group#pass::before{
@@ -95,12 +96,50 @@ body{
 }
 
 .btn{
-    background-color: rgb(224, 77, 18); 
+    background-color: rgb(224, 77, 18);
+    width: 50%; 
 }
 
 .rpg{
     display: flex;
     justify-content: center;
+}
+
+.avatar{
+    background-color: #30303000;
+    width: 100%;
+}
+
+.avatar h2{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.ul-avatar {
+    list-style: none;
+    display: flex;
+}
+.li-avatar {
+
+    margin-right: 15px;
+}
+.input-avatar {
+    visibility:hidden;
+}
+.label-avatar {
+    cursor: pointer;
+}
+.input-avatar:checked + label {
+    transform: scale(1.2, 1.2);
+}
+
+.avatar-foto{
+    width: 100px;
+    height: 100px;
+}
+
+.orange{
+    color: rgb(250, 79, 0);
 }
 
 

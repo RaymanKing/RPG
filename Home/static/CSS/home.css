@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+
+body{
+    background-image: url(/Home/static/Img/back-home.jpg);
+    
+    /*Oscurecer fondo de pantalla*/
+    background-color: rgb(35,35,35);
+    background-blend-mode: soft-light;
+    /*Fin de oscurecer*/
+
+    background-size: cover;
+}
+
+.navbar{
+    background-color: rgba(14, 14, 14, 0.377);
+}
+
+.icon{
+    width: 60px;
+}
+
+.navbar .container-fluid div a{
+    color: rgb(255, 255, 255);
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(0, 0, 255, 0);
+    transition: all 0.35s;
+}
+
+.navbar .container-fluid div a:hover{
+    color: rgb(204, 99, 0);
+    transform: scale(1.1, 1.1);
+}
+
+.navbar .container-fluid div .dropdown-menu{
+    background-color:  rgba(14, 14, 14, 0.377);
+  }
+
+
+
+/*  HOME  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#home .home {
+    color: white;
+    font-size: 55px;
+    padding-top: 60px;
+    padding-right: 260px;
+    float: right;
+}
+
+#home .home span{
+    color: rgb(179, 80, 0);
+}
+
+h5{
+    color: white;
+    margin-top: 35px;
+}
+
+span{
+    color: rgb(179, 80, 0);
+}
+
+h1{
+    font-size: 60px;
+}
+
+.boton{
+    margin-top: 20px;
+}
+
+/*  FOOTER  */
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(100,100,100);
+    background-blend-mode: soft-light;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color:white;
+    margin-top: 870px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 400px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social li{
+    margin: 0 10px;
+}
+.social a{
+    text-decoration: none;
+    color: white;
+}
+
+.social a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.social a:hover {
+    color:rgb(204, 99, 0);
+}
+
+.footer-botton{
+    background-color: rgba(14, 14, 14, 0.377);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-botton p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-botton span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+

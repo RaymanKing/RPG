@@ -1,52 +1,67 @@
 <html>
 
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="static/css/index.css">
+  <title>Login</title>
+
+  <!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Linkear js externo-->
+  <script type="text/javascript" src="js/verify.js"></script>
+
+  <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Los iconos tipo Solid de Fontawesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
   <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Nuestro css-->
+  <link rel="stylesheet" type="text/css" href="static/css/login.css">
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar bg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="/static/img/game.png" class="icon"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Comunidad</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contactanos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fas fa-user"></i>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
+  <div class="rpg">
+    <h1 class="notetask" align="center">R</h1>
+    <h1 class="notetask2" align="center">P</h1>
+    <h1 class="notetask" align="center">G</h1>
+
+  </div>
+  <div class="modal-dialog text-center">
+    <div class="col-sn-8 main-section">
+      <div class="modal-content">
+        <div class="col-12 user-img">
+          <img class="img" src="static/img/game.png">
+        </div>
+        <form class="col-12" id="cuadro">
+          <div class="form-group" id="user">
+            <input class="form-control" type="email" placeholder="Email" id="email" />
+          </div>
+
+          <div class="form-group" id="pass">
+            <input class="form-control" type="password" placeholder="Contraseña" id="password" />
+          </div>
+
+          <button type="button" class="btn btn-danger" onclick="verificar()"><i class="fas fa-play"></i> Iniciar
+            sesion</button>
+        </form>
+        <div class="col-12 forgot">
+          <a href="register.html">¿No tienes cuenta? Registrate.</a>
+        </div>
       </div>
     </div>
-  </nav>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
+  </div>
+
+  <script>
+    function verificar() {
+      let mail = document.getElementById('email').value;
+      let password = document.getElementById('password').value;
+      postRequest(mail, password);
+    }
+  </script>
+
 </body>
 
 </html>

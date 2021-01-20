@@ -2,7 +2,7 @@
 
 
 body{
-    background-image: url(/Home/static/Img/back-home.jpg);
+    background-image: url(../img/back-home.jpg);
     
     /*Oscurecer fondo de pantalla*/
     background-color: rgb(35,35,35);

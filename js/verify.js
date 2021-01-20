@@ -18,7 +18,7 @@ function postRequest(email, pass){
             }else{
                 response.json()
                     .then(data => {
-                        alert('Te has logueado correctamente')
+                        alert('Te has logueado correctamente');
                     })
                     .catch(error => {
                         alert('Te has equivocado')

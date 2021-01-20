@@ -17,3 +17,4 @@ async function postRequest(name, mail, pass, avat){
         .then(response => response.json())
         .then(data => data);
 }
+

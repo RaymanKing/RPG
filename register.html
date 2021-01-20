@@ -6,6 +6,9 @@
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- Linkear js externo-->
+    <script type="text/javascript" src="js/register.js"></script>
+
     <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -15,7 +18,7 @@
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
     <!-- Nuestro css-->
-    <link rel="stylesheet" type="text/css" href="static/css/login.css">
+    <link rel="stylesheet" type="text/css" href="static/css/register.css">
 
 </head>
 
@@ -34,65 +37,65 @@
                 </div>
                 <form class="col-12" id="cuadro">
                     <div class="form-group" id="user">
-                        <input class="form-control" type="text" placeholder="Nombre de usuario" />
+                        <input id="name" class="form-control" type="text" placeholder="Nombre de usuario" />
                     </div>
 
                     <div class="form-group" id="email">
-                        <input class="form-control" type="email" placeholder="Correo electronico" />
+                        <input id="mail" class="form-control" type="email" placeholder="Correo electronico" />
                     </div>
 
                     <div class="form-group" id="pass">
-                        <input class="form-control" type="password" placeholder="Contraseña" />
+                        <input id="password" class="form-control" type="password" placeholder="Contraseña" />
                     </div>
 
                     <div class="avatar">
                         <h2>Selecciona un <span class="orange">avatar</span> </h2>
                         <ul class="ul-avatar">
                             <li class="il-avatar">
-                                <input type='radio' value='1' name='radio' class="input-avatar" id='radio1'/>
+                                <input type='radio' value='/static/img/avatar01.png' name='radio' class="input-avatar" id='radio1'/>
                                 <label class="label-avatar" for='radio1'><img src="/static/img/avatar01.png" class="avatar-foto"></label>
                             </li>
                             <li class="il-avatar">
-                                <input type='radio' value='2' name='radio'  class="input-avatar" id='radio2'/>
+                                <input type='radio' value='/static/img/avatar02.png' name='radio'  class="input-avatar" id='radio2'/>
                                 <label class="label-avatar" for='radio2'><img src="/static/img/avatar02.png" class="avatar-foto"></label>
                             </li>
                             <li class="il-avatar">
-                                <input type='radio' value='3' name='radio'  class="input-avatar" id='radio3'/>
+                                <input type='radio' value='/static/img/avatar03.png' name='radio'  class="input-avatar" id='radio3'/>
                                 <label class="label-avatar" for='radio3'><img src="/static/img/avatar03.png" class="avatar-foto"></label>
                             </li>
                         </ul>
                         <ul class="ul-avatar">
                             <li class="il-avatar">
-                                <input type='radio' value='4' name='radio' class="input-avatar" id='radio4'/>
+                                <input type='radio' value='/static/img/avatar04.png' name='radio' class="input-avatar" id='radio4'/>
                                 <label class="label-avatar" for='radio4'><img src="/static/img/avatar04.png" class="avatar-foto"></label>
                             </li>
                             <li class="il-avatar">
-                                <input type='radio' value='5' name='radio'  class="input-avatar" id='radio5'/>
+                                <input type='radio' value='/static/img/avatar05.png' name='radio'  class="input-avatar" id='radio5'/>
                                 <label class="label-avatar" for='radio5'><img src="/static/img/avatar05.png" class="avatar-foto"></label>
                             </li>
                             <li class="il-avatar">
-                                <input type='radio' value='6' name='radio'  class="input-avatar" id='radio6'/>
+                                <input type='radio' value='/static/img/avatar06.png' name='radio'  class="input-avatar" id='radio6'/>
                                 <label class="label-avatar" for='radio6'><img src="/static/img/avatar06.png" class="avatar-foto"></label>
                             </li>
                         </ul>
                         <ul class="ul-avatar">
                             <li class="il-avatar">
-                                <input type='radio' value='7' name='radio' class="input-avatar" id='radio7'/>
+                                <input type='radio' value='/static/img/avatar07.png' name='radio' class="input-avatar" id='radio7'/>
                                 <label class="label-avatar" for='radio7'><img src="/static/img/avatar07.png" class="avatar-foto"></label>
                             </li>
                             <li class="il-avatar">
-                                <input type='radio' value='8' name='radio'  class="input-avatar" id='radio8'/>
+                                <input type='radio' value='/static/img/avatar08.png' name='radio'  class="input-avatar" id='radio8'/>
                                 <label class="label-avatar" for='radio8'><img src="/static/img/avatar08.png" class="avatar-foto"></label>
                             </li>
                             <li class="il-avatar">
-                                <input type='radio' value='9' name='radio'  class="input-avatar" id='radio9'/>
+                                <input type='radio' value='/static/img/avatar09.png' name='radio'  class="input-avatar" id='radio9'/>
                                 <label class="label-avatar" for='radio9'><img src="/static/img/avatar09.png" class="avatar-foto"></label>
                             </li>
                         </ul>
 
                     </div>
 
-                    <center><button type="button" class="btn btn-danger"><i class="fas fa-user-plus"></i> Registrarme</button></center>
+                    <center><button type="button" class="btn btn-danger" onclick="register()"><i class="fas fa-user-plus"></i> Registrarme</button></center>
                     <div class="col-12 forgot">
                         <a href="login.html">¿Ya tienes una cuenta? Inicia sesion.</a>
                     </div>
@@ -101,6 +104,28 @@
         </div>
     </div>
 
+    <script>
+        function register(){
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('mail').value;
+            let password = document.getElementById('password').value;
+            let avatar = "";
+            for(let i = 1; i < 10; i++){
+                let radio = document.getElementById('radio'+i);
+                if(radio.checked){
+                    avatar = radio.value;
+                }
+            }
+            if(name == "" || email == "" || password == "" || avatar == ""){
+                alert('Porfavor introduce todos los datos y selecciona un avatar')
+            }else{
+                postRequest(name, email, password, avatar);
+                alert('Te has registrado correctamente!');
+                location.href ="login.html";
+            }
+            
+        }
+    </script>
 
 </body>
 

@@ -6,6 +6,9 @@
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- Linkear js externo-->
+    <script type="text/javascript" src="js/verify.js"></script>
+
     <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -34,14 +37,14 @@
                 </div>
                 <form class="col-12" id="cuadro">
                     <div class="form-group" id="user">
-                        <input class="form-control" type="text" placeholder="Nombre de usuario" />
+                        <input class="form-control" type="text" placeholder="Nombre de usuario" id="username"/>
                     </div>
 
                     <div class="form-group" id="pass">
-                        <input class="form-control" type="text" placeholder="Contraseña" />
+                        <input class="form-control" type="password" placeholder="Contraseña" id="password"/>
                     </div>
 
-                    <button type="button" class="btn btn-danger"><i class="fas fa-play"></i> Iniciar sesion</button>
+                    <button type="button" class="btn btn-danger" onclick="verificar()"><i class="fas fa-play"></i> Iniciar sesion</button>
                 </form>
                 <div class="col-12 forgot">
                     <a href="register.html">¿No tienes cuenta? Registrate.</a>
@@ -49,6 +52,15 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function verificar(){
+            let name = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            getPlayers(name,password);
+        }
+    </script>
+
 </body>
 
 </html>

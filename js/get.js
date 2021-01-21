@@ -44,7 +44,7 @@ async function getGames(){
         card_body.appendChild(p);
         let a = document.createElement('a');
         a.href='juegos.html';
-        a.setAttribute('onclick','localGame("'+result[i].Nombre+'")');
+        a.setAttribute('onclick','localGame("'+result[i].Nombre+'","'+result[i].id+'")');
         a.className = 'btn btn-primary';
         a.innerText = 'Ir a la comunidad';
         card_body.appendChild(a);

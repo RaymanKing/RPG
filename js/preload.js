@@ -7,21 +7,19 @@ function sleep(ms) {
 }
 
 async function run() {
-    await sleep(2000);
-    letrero.innerText = letreros[index];
-    console.log('poo')
-    index++;
-    await sleep(2000);
+    await sleep(1000);
     letrero.innerText = letreros[index];
     index++;
-    console.log('poo2')
-    await sleep(2000);
+    await sleep(1000);
     letrero.innerText = letreros[index];
     index++;
-    await sleep(2000);
+    await sleep(1000);
     letrero.innerText = letreros[index];
     index++;
-    await sleep(2000);
+    await sleep(1000);
+    letrero.innerText = letreros[index];
+    index++;
+    await sleep(1000);
     window.location.href="../home.html"
 
 }

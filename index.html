@@ -58,6 +58,7 @@
     function verificar() {
       let mail = document.getElementById('email').value;
       let password = document.getElementById('password').value;
+      getDates(mail);
       postRequest(mail, password);
     }
   </script>

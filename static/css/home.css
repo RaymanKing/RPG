@@ -36,6 +36,10 @@ body{
     background-color:  rgba(14, 14, 14, 0.377);
   }
 
+  .navbar .container-fluid .navbar-toggler-icon{
+    color: white;
+}
+
 
 
 /*  HOME  */

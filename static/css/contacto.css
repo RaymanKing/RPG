@@ -253,6 +253,10 @@ body{
       display: none;
     }
   }
+
+  .navbar .container-fluid .navbar-toggler-icon{
+    color: white;
+}
   
   @media screen and (max-width: 600px) {
     .screen-body {

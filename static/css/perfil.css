@@ -110,3 +110,7 @@ form{
 .div-perfil{
     background-color: rgb(0, 0, 0);
 }
+
+.navbar .container-fluid .navbar-toggler-icon{
+  color: white;
+}

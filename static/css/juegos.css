@@ -2,7 +2,8 @@
 
 
 body{
-    background: rgba(0, 0, 0, 0.87);
+    background-image: url(/static/img/fondo-comunidad.jpg);
+    background-size: cover;
 }
 
 .navbar{
@@ -127,6 +128,10 @@ body{
 
 #icono a:hover {
     color:rgb(204, 99, 0);
+}
+
+.navbar .container-fluid .navbar-toggler-icon{
+    color: white;
 }
 
 @media only screen and (max-width:890px){

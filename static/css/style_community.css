@@ -2,7 +2,8 @@
 
 
 body{
-    background-color: rgba(0, 0, 0, 0.87);
+    background-image: url(/static/img/fondo-comunidad.jpg);
+    background-size: cover;
 }
 
 .navbar{
@@ -89,6 +90,10 @@ body{
     color:rgb(204, 99, 0);
 }
 
+.navbar .container-fluid .navbar-toggler-icon{
+    color: white;
+}
+
 @media only screen and (max-width:890px){
     .footer{
         width: 20px;
@@ -107,3 +112,4 @@ body{
         float: left;
     }
 }
+

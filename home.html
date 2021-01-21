@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="static/img/game.png" class="icon"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars" id="hamburguesa"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="community.html">Comunidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <!--<i class="fas fa-user"></i>-->
+                            <img id="perfil" src="">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+                            <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+
+    <!--   HOME   -->
+
+    <div id="home">
+        <div class="home">
+
+            <div>
+                <h1>Bienvenidos a <br>
+                    R<span>P</span>G <br>
+                    ¡La mejor <span>comunidad</span><br>
+                    para <span>jugadores</span>!
+                </h1>
+                <h5> Enseña, aprende, mejora... <br>
+                    Ramdon <span>Players</span> Gamers</h5>
+            </div>
+
+            <!--    BOOTSTRAP BUTTON    -->
+
+            <div class="boton">
+                <div class="d-grid gap-2 d-md-flex justify-content-xl-between">
+                    <a class="btn btn-outline-warning"><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/GHfeNH0EYzk" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--    FOOTER  -->
+
+    <section class="footer">
+        <footer class="bg-light text-center text-lg-start">
+            <div class="text-center p-3 text-white" style="background-color:  rgb(50, 50, 50)">
+                Copyright ©2021 Rpg. Desighed By EMO
+                <div id="icono">
+                    <a><i class="fab fa-instagram"></i></a>
+                    <a><i class="fab fa-facebook-f"></i></a>
+                    <a><i class="fab fa-twitter"></i></a>
+                    <a><i class="fab fa-reddit-square"></i></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        let perf = document.getElementById('perfil');
+        let ruta = localStorage.getItem('avatar');
+        perf.src = '' + ruta + '';
+    </script>
+
+</body>
+
+</html>

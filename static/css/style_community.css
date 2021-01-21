@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+
+body{
+    background-image: url(/static/img/fondo-comunidad.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.navbar{
+    background-color: rgba(14, 14, 14, 0.377);
+}
+
+#perfil{
+    width: 40px;
+    height: 40px;
+    border-radius: 180%;
+}
+
+.icon{
+    width: 60px;
+}
+
+.navbar .container-fluid div a{
+    color: rgb(255, 255, 255);
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(0, 0, 255, 0);
+    transition: all 0.35s;
+}
+
+.navbar .container-fluid div a:hover{
+    color: rgb(204, 99, 0);
+    transform: scale(1.1, 1.1);
+}
+
+.navbar .container-fluid div .dropdown-menu{
+    background-color:  rgba(14, 14, 14, 0.377);
+}
+
+
+.container-fluid {
+    background-color: rgba(223, 0, 0, 0);
+}
+
+.card{
+    margin: 30px;
+    text-align: center;
+    background-color: rgba(14, 14, 14, 0.781);
+    color: white;
+    border: 2px rgb(179, 80, 0) solid;
+}
+
+.card .card-img{
+    border-radius: 100%;
+    border: 2px white solid;
+}
+
+.card .card-body .btn{
+    background-color: rgb(179, 80, 0);
+    transition: all 0.35s;
+    border: 0px;
+}
+
+.card .card-body .btn:hover{
+    background-color: red;
+    transform: scale(1.1, 1.1);
+}
+
+/*  FOOTER  */
+ 
+.footer{
+    bottom: 0;
+    position: fixed;
+}
+
+#icono{
+    margin-top: 17px;
+}
+
+#icono a{
+    text-decoration: none;
+    color: white;
+}
+
+#icono a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+#icono a:hover {
+    color:rgb(204, 99, 0);
+}
+
+.navbar .container-fluid .navbar-toggler-icon{
+    color: white;
+}
+
+@media only screen and (max-width:890px){
+    .footer{
+        width: 20px;
+    }
+}
+
+
+
+
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width:768px){
+
+    #home .home{
+        float: left;
+    }
+}
+

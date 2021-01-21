@@ -3,7 +3,8 @@
 
 body{
     background-image: url(/static/img/fondo-comunidad.jpg);
-    background-size: cover;
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 .navbar{
@@ -44,7 +45,7 @@ body{
 .card{
     margin: 30px;
     text-align: center;
-    background-color: rgba(14, 14, 14, 0.377);
+    background-color: rgba(14, 14, 14, 0.781);
     color: white;
     border: 2px rgb(179, 80, 0) solid;
 }

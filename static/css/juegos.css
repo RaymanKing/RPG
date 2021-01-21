@@ -3,7 +3,8 @@
 
 body{
     background-image: url(/static/img/fondo-comunidad.jpg);
-    background-size: cover;
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 .navbar{
@@ -45,7 +46,7 @@ body{
 .card{
     width: 30%;
     color: white;
-    background-color: rgba(14, 14, 14, 0.377);
+    background-color: rgba(14, 14, 14, 0.671);
     font-family: 'Orbitron', sans-serif;
     transition: all 0.5s;
     margin-top: 50px;
